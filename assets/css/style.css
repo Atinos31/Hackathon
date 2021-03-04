@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
 
+
+img {
+ margin: 5px;
+ padding: 3px;
+ border: 0; 
+}
+
 .read-more .social-networks {
     text-decoration: none;
 }
