@@ -7,42 +7,41 @@ else the card traverses to the back of the pile and flips over - showing the bac
 a card from the stack flips over and moves to the middle - shows front
 */
 
-let answer = $(".option").data-value.value()
-let AnswerCounter = 0
-let DrinkCounter = 0
+let answer = $("#answer-btn").data-value.value()
+let answerCounter = 0
+let drinkCounter = 0
 
 // increases correct answer count
 function correctCounterIncrease(){
-    increaseAnswer = AnswerCounter ++
-    AnswerCounter = increaseAnswer
-    return AnswerCounter
+    increaseAnswer = answerCounter ++
+    answerCounter = increaseAnswer
+    return answerCounter
 }
 
 // increases drink count
-function DrinkCounterIncrease(){
-    increaseDrink = DrinkCounter ++
-    DrinkCounter = increaseDrink
-    return DrinkCounter
+function drinkCounterIncrease(){
+    increaseDrink = drinkCounter ++
+    drinkCounter = increaseDrink
+    return drinkCounter
 }
 
 // changes the background of wrong answers
-function WrongBackground(){
-    let wrongStyle = {
-        .option{
-            background: red;
-            color: white;
-        }
+function wrongAnswer(){
+    let answerWrong = $("#answer-btn").css({
+        "background": "red",
+        "color": "white"
+        }); 
     }
-    this.$('.option').mount({style: wrongStyle});
+    this.$("#answer-btn").mount({style: answerWrong});
 }
 
 // Main game functionality
 if (answer == "right"){
     correctCounterIncrease(); // Done
-    MoveBack();
-    FlipOver();
-    NewCard();
+    moveBack();
+    flipOver();
+    newCard();
 }else{
-    WrongBackground(); // in progress
-    DrinkCounterIncrease(); // Done
+    wrongAnswer(); // Done
+    drinkCounterIncrease(); // Done
 }
