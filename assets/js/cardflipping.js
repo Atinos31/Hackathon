@@ -8,13 +8,41 @@ a card from the stack flips over and moves to the middle - shows front
 */
 
 let answer = $(".option").data-value.value()
+let AnswerCounter = 0
+let DrinkCounter = 0
 
+// increases correct answer count
+function correctCounterIncrease(){
+    increaseAnswer = AnswerCounter ++
+    AnswerCounter = increaseAnswer
+    return AnswerCounter
+}
+
+// increases drink count
+function DrinkCounterIncrease(){
+    increaseDrink = DrinkCounter ++
+    DrinkCounter = increaseDrink
+    return DrinkCounter
+}
+
+// changes the background of wrong answers
+function WrongBackground(){
+    let wrongStyle = {
+        .option{
+            background: red;
+            color: white;
+        }
+    }
+    this.$('.option').mount({style: wrongStyle});
+}
+
+// Main game functionality
 if (answer == "right"){
-    correctCounterIncrease();
+    correctCounterIncrease(); // Done
     MoveBack();
     FlipOver();
     NewCard();
 }else{
-    WrongBackground();
-    DrinkCounterIncrease();
+    WrongBackground(); // in progress
+    DrinkCounterIncrease(); // Done
 }
