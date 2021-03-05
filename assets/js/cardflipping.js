@@ -45,7 +45,7 @@ Feel free to change anything.
                     
     });
 
-    // Answer input event listener
+    // Answer button event listener
     $(answerButton).on("click", function() {
         
         if (answerButton.hasClass("right")) {
@@ -57,6 +57,7 @@ Feel free to change anything.
 
             rightAnswerCountIncrease();
             nextTurn();
+
         } else {
             // changes the background of wrong answers
             $(this).css({ 
@@ -65,6 +66,7 @@ Feel free to change anything.
             });
             
             drinkCountIncrease();
+            nextTurn();
         }
     });
 
