@@ -33,6 +33,7 @@ Nikolas
 
     let answerButton = $("answer-btn");
     let startButton = $(".newgame");
+    let nextButton = $(".next");
     let rightAnswers = 0;
     let answerCount = documemt.getElementById("answerCounter");
     let drinks = 0;
@@ -88,29 +89,30 @@ Nikolas
 
     }
 
-    // counts the turns
+    // increments the turn count (to help with moving to the next card)
     function nextTurn() {
-        if (turn <= 10) { //checks against total number of game turns (tbd)
+        if (turn <= 10, turn != 0) { //checks against total number of game turns (tbd)
 
+            $(nextButton).attr("disabled", "false");
             newCard();
             turn++
 
-        } else if (turn > 10) {
+        } else  {
 
-            gameEnd(); //not 100% sure on that we'll have to test it
+            gameEnd(); 
 
         };
     }
     
     // ends the game
-    function gameEnd() {
+    function gameEnd() { //not 100% sure on that we'll have to test it
 
       window.location.replace("/endgame.html");
 
     }
 
     function newCard() {
-
+        flipCard();
     }
 
     function flipCard() {
