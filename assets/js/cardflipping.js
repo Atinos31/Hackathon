@@ -7,7 +7,7 @@ if the data-set != right then it's Css changes - red background
 else the card traverses to the back of the pile and flips over - showing the back
 a card from the stack flips over and moves to the middle - shows front
 
-5/3 Nikolas
+5/3 
 Hey Keis, I have done quite a few changes as you will see. 
 I added camelcase and renamed stuff. 
 I have kept your main game functionality build bellow, with the appropriate changes
@@ -16,11 +16,13 @@ I have reworked the logic using jquery and the basic frame for it is showing I t
 Essentialy I combined a lot of the stuff you have written to save us code length. 
 A lot of the functions a logic used come from my MS2 and are tested to work. 
 Feel free to change anything.
+Nikolas
 */
 
 // Main game functionality
 //   if (answer == "right"){
 //       rightAnswerCountIncrease(); - Done
+//       nextTurn(); - Done
 //       newCard(); 
 //       flipCard();       
 //      }else{
@@ -88,12 +90,12 @@ Feel free to change anything.
 
     // counts the turns
     function nextTurn() {
-        if (turn < 10) { //checks against total number of game turns (tbd)
+        if (turn <= 10) { //checks against total number of game turns (tbd)
 
             newCard();
             turn++
 
-        } else {
+        } else if (turn > 10) {
 
             gameEnd(); //not 100% sure on that we'll have to test it
 
@@ -104,6 +106,14 @@ Feel free to change anything.
     function gameEnd() {
 
       window.location.replace("/endgame.html");
+
+    }
+
+    function newCard() {
+
+    }
+
+    function flipCard() {
 
     }
 
