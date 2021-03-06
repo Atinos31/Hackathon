@@ -31,42 +31,56 @@ Nikolas
 //   endGame() - Done
 //   startbutton event listener - done
 
-    let answerButton = $("#answer-btn");
-    let startButton = $(".newgame");
-    let nextButton = $(".next");
+    const answerButton = $(".answer-btn");
+    const startButton = $("#newgame");
+    const nextButton = $(".next");
+    const restartButton = $("#restart");
     let rightAnswers = 0;
-    let answerCount = documemt.getElementById("answerCounter");
+    let answerCount = $("#answerCounter");
     let drinks = 0;
-    let drinkCount = document.getElementById("drinkCounter");
+    let drinkCount = $("#drinkCounter");
     let turn = 0;
-    let gameOver = true; 
+    let gameOver = Boolean; 
 
     // Start button event listener
     $(startButton).on("click", function() {
             
         gameOver = false; 
         turn = 1;
-        window.location.replace("/game.html");
-            
-                    
+        window.location.replace('/game.html');
+        $(".carousel").carousel('1');
+
     });
+    // increases right answer count
+    function rightAnswerCountIncrease() {
+
+        rightAnswers++;
+        console.log(rightAnswers)
+        $('#answerCounter').innerHTML = rightAnswers;
+        console.log("Right answer count increased")
+    }
 
     // Carousel functionality from Bootstrap
-    $('.carousel').carousel('1', {
+    $('.carousel').carousel({
         interval: false, // The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.
         wrap: false //Whether the carousel should cycle continuously or have hard stops (default is true).
     });
+    
+    // A function to start the next turn
+    function nextTurn(){
+        console.log("next turn")
+    }
 
     // Answer button event listener
-    $(answerButton).on("click", function(e) {
+    $(answerButton).on("click", function() {
         
-        if ($(e.target).hasClass("right")) {
+        if ($(this).hasClass("right")) {
             // changes the background of right answers
             $(this).css({ 
-                "background": "green",
-                "color": "white"
+                "background": "#008000",
+                "color": "#FFFFFF"
             });
-
+            console.log("Right answer clicked")
             rightAnswerCountIncrease();
             nextTurn();
 
@@ -74,7 +88,7 @@ Nikolas
             // changes the background of wrong answers
             $(this).css({ 
                 "background": "red",
-                "color": "white"
+                "color": "#FFFFFF"
             });
             
             drinkCountIncrease();
@@ -82,13 +96,6 @@ Nikolas
         }
     });
 
-    // increases right answer count
-    function rightAnswerCountIncrease() {
-
-        rightAnswers++;
-        answerCount.innerHTML = rightAnswers;
-
-    }
 
     // increases drink count
     function drinkCountIncrease() {
@@ -99,7 +106,7 @@ Nikolas
     }
 
     // Event listener for next card button.
-    (nextButton).on("click", function() {
+    $(nextButton).on("click", function() {
         if (turn <= 10, turn != 0) { 
             
             turn++;
@@ -112,6 +119,14 @@ Nikolas
 
         };
     });
+
+    // Event listener for restart game button
+    $(restartButton).on("click", function() {
+
+        $('.carousel').carousel('dispose');
+        gameOver = true;
+        window.location.replace("/index.html");
+    });
     
     // ends the game
     function gameEnd() { //not 100% sure on that we'll have to test it
@@ -122,6 +137,7 @@ Nikolas
 
     }
 
+    // moves the deck to the next card
     function newCard() { //this will have to edit the carousel's js
         
     }   
