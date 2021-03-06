@@ -20,6 +20,15 @@
     background-size: cover;
 }
 /* end_game.html */
+
+.end-game {
+    background-image: url("/media/St.-Patricks-Day1-675x477.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+
 h2, h5 {
     font-family: 'MedievalSharp', cursive;
 }
