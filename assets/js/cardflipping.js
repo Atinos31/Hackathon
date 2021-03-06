@@ -32,10 +32,10 @@ Nikolas
 //   startbutton event listener - done
 
     let answerButton = $("#answer-btn");
-    let startButton = $(".newgame");
+    let startButton = $("#newgame");
     let nextButton = $(".next");
     let rightAnswers = 0;
-    let answerCount = documemt.getElementById("answerCounter");
+    let answerCount = $(".answerCounter");
     let drinks = 0;
     let drinkCount = document.getElementById("drinkCounter");
     let turn = 0;
@@ -46,9 +46,8 @@ Nikolas
             
         gameOver = false; 
         turn = 1;
-        window.location.replace("/game.html");
-            
-                    
+        console.log(window.location)
+        window.location.replace("/game.html");     
     });
 
     // Carousel functionality from Bootstrap
