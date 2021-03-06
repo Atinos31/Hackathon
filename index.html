@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="Enter your description here"/>
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
@@ -13,90 +14,28 @@
 </head>
 <body>
 
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-        <div class="question-card">
-            <div class="question-card-inner">
-                <div class="question-card-front">
-                    <img class="question-card-front-image" src="assets/images/cardback.png" alt="Card Back">
-                </div>
-                <div class="question-card-back">
-                    <h1>Question 1</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
-                    <form>
-                        <input type="radio" id="one" name="one" value="one">
-                        <label for="one">One</label>
-                        <input type="radio" id="two" name="two" value="two">
-                        <label for="two">Two</label><br>
-                        <input type="radio" id="three" name="three" value="three">
-                        <label for="three">Three</label>
-                        <input type="radio" id="four" name="four" value="four">
-                        <label for="four">Four</label><br>
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-            </div>
-        </div>
+<section class="landing">
+    <div class="col-12 header">
+        <h1><span class="logo mr-2"><img src="media/logo1.png" width="70" alt="a pic of a shamrock" class="logo"></span>ST.PATRICK'S THE GATHERING</h1>
     </div>
-    <div class="carousel-item">
-        <div class="question-card">
-            <div class="question-card-inner">
-                <div class="question-card-front">
-                    <img class="question-card-front-image" src="assets/images/cardback.png" alt="Card Back">
-                </div>
-                <div class="question-card-back">
-                    <h1>Question 2</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
-                    <form>
-                        <input type="radio" id="one" name="one" value="one">
-                        <label for="one">One</label>
-                        <input type="radio" id="two" name="two" value="two">
-                        <label for="two">Two</label><br>
-                        <input type="radio" id="three" name="three" value="three">
-                        <label for="three">Three</label>
-                        <input type="radio" id="four" name="four" value="four">
-                        <label for="four">Four</label><br>
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-            </div>
+</section>
+   <div class="bg-image">
+    <div class="jumbotron text-center mt-4">
+       <h2 style="text-decoration: underline;" class="h2" ><span class="mr-2"><img src="media/icon.png"  width="50" alt="a picture of an icon" class="icons"></span>ST.PATRICK'S GATHERING<span><img src="media/icon.png" width="50" alt="" class="icons"></span></h2>
+                <p class="p-3">Tri-tip bacon filet mignon shorts.Swine kevin ribeye, tongue pork loin turkey ball tip ham pork shoulder brisket ham hock, kielbasa chuck biltong tri-tip tongue leberkas leberkas sausage tail venison , shoulder short ribs filet mignon frankfurter sirloin venison,leberkas pastrami kevin doner corned beef bacon,
+                shoulder cow tabone brisket chicken turducken cupin ground round,turducken venison doner pork loin ,short loin buffalo pork loin kielbasa drumstick chuck boudin pork belly pig swine tenderloin ball tip porchetta strip steak
+                </p>
+                <h2 style="text-decoration: underline;"><span class="mr-2"><img src="media/icon.png" width="50" alt="image of an icon" class="icons"></span>HOW TO PLAY<span><img src="media/icon.png" width="50" alt="" class="icons"></span></h2>
+                <ul class="howto">
+                    <li>Press start a new game below.</li>
+                     <li>Answer the question on the card.</li>
+                      <li>If you're wrong, drink(optional).</li>
+                       <li>Move on to the next.</li>
+                </ul>
+                <p><small class="text-muted">Remember to always drink responsibly!</small></p>
+             <a href="#" class="btn  btn-success start-btn">START A NEW GAME</a>
         </div>
-    </div>
-    <div class="carousel-item">
-        <div class="question-card">
-                <div class="question-card-inner">
-                    <div class="question-card-front">
-                        <img class="question-card-front-image" src="assets/images/cardback.png" alt="Card Back">
-                    </div>
-                    <div class="question-card-back">
-                        <h1>Question 3</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
-                        <form>
-                            <input type="radio" id="one" name="one" value="one">
-                            <label for="one">One</label>
-                            <input type="radio" id="two" name="two" value="two">
-                            <label for="two">Two</label><br>
-                            <input type="radio" id="three" name="three" value="three">
-                            <label for="three">Three</label>
-                            <input type="radio" id="four" name="four" value="four">
-                            <label for="four">Four</label><br>
-                            <input type="submit" value="Submit">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" role="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" role="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
+   </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
