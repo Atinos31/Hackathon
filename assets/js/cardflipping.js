@@ -24,14 +24,14 @@ Nikolas
 //       rightAnswerCountIncrease(); - Done
 //       nextTurn(); - Done
 //       newCard(); 
-//       flipCard();       
+//       flipCard(); - Included in Kirsty's carousel?       
 //      }else{
 //       drinkCountIncrease(); - Done
 //   }
 //   endGame() - Done
 //   startbutton event listener - done
 
-    let answerButton = $("answer-btn");
+    let answerButton = $("#answer-btn");
     let startButton = $(".newgame");
     let nextButton = $(".next");
     let rightAnswers = 0;
@@ -39,19 +39,28 @@ Nikolas
     let drinks = 0;
     let drinkCount = document.getElementById("drinkCounter");
     let turn = 0;
+    let gameOver = true; 
 
     // Start button event listener
     $(startButton).on("click", function() {
             
-            turn = 1;
-            window.location.replace("/game.html");;            
+        gameOver = false; 
+        turn = 1;
+        window.location.replace("/game.html");
+            
                     
     });
 
+    // Carousel functionality from Bootstrap
+    $('.carousel').carousel('1', {
+        interval: false, // The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.
+        wrap: false //Whether the carousel should cycle continuously or have hard stops (default is true).
+    });
+
     // Answer button event listener
-    $(answerButton).on("click", function() {
+    $(answerButton).on("click", function(e) {
         
-        if (answerButton.hasClass("right")) {
+        if ($(e.target).hasClass("right")) {
             // changes the background of right answers
             $(this).css({ 
                 "background": "green",
@@ -69,7 +78,7 @@ Nikolas
             });
             
             drinkCountIncrease();
-            nextTurn();
+            $(nextButton).attr("aria-display", "visible");
         }
     });
 
@@ -89,35 +98,31 @@ Nikolas
 
     }
 
-    // increments the turn count (to help with moving to the next card)
-    function nextTurn() {
-        if (turn <= 10, turn != 0) { //checks against total number of game turns (tbd)
-
-            $(nextButton).attr("disabled", "false");
-            newCard();
-            turn++
+    // Event listener for next card button.
+    (nextButton).on("click", function() {
+        if (turn <= 10, turn != 0) { 
+            
+            turn++;
+            newCard(); // maybe this will need to call one of the carousel's built in functions (?)
+           
 
         } else  {
-
+           
             gameEnd(); 
 
         };
-    }
+    });
     
     // ends the game
     function gameEnd() { //not 100% sure on that we'll have to test it
-
-      window.location.replace("/endgame.html");
-
-    }
-
-    function newCard() {
-        flipCard();
-    }
-
-    function flipCard() {
+        
+            $('.carousel').carousel('dispose'); // Destroys an element’s carousel.
+            gameOver = true;
+            window.location.replace("/end_game.html");
 
     }
 
-
+    function newCard() { //this will have to edit the carousel's js
+        
+    }   
 });
