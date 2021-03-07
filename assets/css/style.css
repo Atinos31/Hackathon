@@ -217,6 +217,30 @@ p {
     height:670px;
 }
     /*media queries*/
+@media (max-width: 1025px){
+    .question-card-front-image{
+        max-width: 99%;
+        height: auto;
+  }
+  .question-card-back {
+      margin: auto auto;
+      position: relative;
+      max-width: 100%;
+      height: auto;
+  }
+}
+@media (max-width: 541px){
+    .question-card-front-image{
+        max-width: 90%;
+        height: auto;
+  }
+  .question-card-back {
+      margin: auto auto;
+      position: relative;
+      max-width: 45%;
+      height: auto;
+  }
+}
 @media (max-width: 415px){
     .question-card-front-image{
         max-width: 70%;
@@ -263,12 +287,25 @@ p {
         max-width: 55%;
         height: auto;
   }
-  .question-card-back {
+    .question-card-back {
       margin: auto auto;
       position: relative;
       max-width: 45%;
       height: auto;
       left: 110px;
+  }
+}
+@media (max-width: 281px){
+    .question-card-front-image{
+        max-width: 46%;
+        height: auto;
+  }
+    .question-card-back {
+      margin: auto auto;
+      position: relative;
+      max-width: 45%;
+      height: auto;
+
   }
 }
 
