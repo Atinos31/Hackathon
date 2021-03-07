@@ -208,15 +208,61 @@ p {
     height:670px;
 }
     /*media queries*/
+@media (max-width: 415px){
+    .question-card-front-image{
+        max-width: 70%;
+        height: auto;
+  }
+  .question-card-back {
+      margin: auto auto;
+      position: relative;
+      max-width: 45%;
+      height: auto;
+      left: 60px;
+  }
+}
+
+@media (max-width: 376px){
+    .question-card-front-image{
+        max-width: 65%;
+        height: auto;
+  }
+  .question-card-back {
+      margin: auto auto;
+      position: relative;
+      max-width: 45%;
+      height: auto;
+      left: 100px;
+  }
+}
+@media (max-width: 360px){
+    .question-card-front-image{
+        max-width: 60%;
+        height: auto;
+  }
+  .question-card-back {
+      margin: auto auto;
+      position: relative;
+      max-width: 45%;
+      height: auto;
+      left: 110px;
+  }
+}
 
 @media (max-width: 320px){
-    .question-card-front-image {
-        display: flex;
-        justify-content: center;
+    .question-card-front-image{
         max-width: 55%;
         height: auto;
   }
+  .question-card-back {
+      margin: auto auto;
+      position: relative;
+      max-width: 45%;
+      height: auto;
+      left: 110px;
+  }
 }
+
 @media (min-width: 321px) {
   html {
     font-size: calc(10px + 6 * ((100vw - 320px) / 680));
@@ -224,9 +270,7 @@ p {
   }
   .jumbotron {
       min-width: 55%;
-  }
-  
-  
+  }  
 }
 @media (min-width: 1000px) {
   html {
