@@ -112,53 +112,6 @@ h1,h2,h3,h4{
   
 }
 
-    /*media queries*/
-
-@media screen and (min-width: 320px) {
-  html {
-    font-size: calc(10px + 6 * ((100vw - 320px) / 680));
- 
-  }
-  .jumbotron{
-      min-width: 55%;
-  }
-  
-}
-@media screen and (min-width: 1000px) {
-  html {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width:768px){
-    .jumbotron{
-        max-width: 80%;
-       
-    }
-    .jumbotron span .icons{
-        width: 20px;
-    }
-    h1{
-        font-size: 1.7rem;
-        font-weight: 900;
-        line-height: 1.5rem;
-        letter-spacing: 0.01rem;
-        color: #fff;
-
-    }
-    h2{
-        font-size: 1.6rem;
-        font-weight: 900;
-        line-height: 1.5rem;
-        letter-spacing: 0.01rem;
-    }
-
-    p,.howto{
-        font-size: 1.1rem;
-        color: #000;
-    }
-}
-
 /*--read-more
 .img-read-more {
  margin: 5px;
@@ -252,4 +205,54 @@ p {
 .question-card-front-image {
     width:540px;
     height:670px;
+}
+    /*media queries*/
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+ 
+  }
+  .jumbotron{
+      min-width: 55%;
+  }
+  .question-card-front-image{
+      width: auto;
+      height: 100%;
+  }
+  
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:768px){
+    .jumbotron{
+        max-width: 80%;
+       
+    }
+    .jumbotron span .icons{
+        width: 20px;
+    }
+    h1{
+        font-size: 1.7rem;
+        font-weight: 900;
+        line-height: 1.5rem;
+        letter-spacing: 0.01rem;
+        color: #fff;
+
+    }
+    h2{
+        font-size: 1.6rem;
+        font-weight: 900;
+        line-height: 1.5rem;
+        letter-spacing: 0.01rem;
+    }
+
+    p,.howto{
+        font-size: 1.1rem;
+        color: #000;
+    }
 }
