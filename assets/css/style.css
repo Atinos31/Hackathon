@@ -217,6 +217,13 @@ p {
     height:670px;
 }
 
+.question-words {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -224,16 +231,18 @@ p {
     margin: 20px 5px;
 }
 
-.question-btn .btn {
+.question-btn.btn {
     border-radius: 30px;
     padding: 1rem 3rem;
-    color: white;
+    color: #000000;
     outline: none;
-    border-color: black;
+    border-color: #000000;
+    font-size: 1.5rem;
 }
 
 .btn.wrong {
     background-color: #ff0000;
+    color: #ffffff;
 }
 
 .btn.correct {
@@ -252,6 +261,10 @@ p {
     height: 75%;
     width: auto;
 }
+
+.hide {
+    display: none;
+} 
 
     /*media queries*/
 @media (max-width: 1025px){
