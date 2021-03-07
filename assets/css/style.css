@@ -216,6 +216,43 @@ p {
     width:540px;
     height:670px;
 }
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin: 20px 5px;
+}
+
+.question-btn .btn {
+    border-radius: 30px;
+    padding: 1rem 3rem;
+    color: white;
+    outline: none;
+    border-color: black;
+}
+
+.btn.wrong {
+    background-color: #ff0000;
+}
+
+.btn.correct {
+    background-color: #7AB648;
+}
+
+.question-card-front.side {
+    z-index: -1;
+}
+
+.question-card-front.side.left {
+    text-align: right;
+}
+
+.question-card-front-image.side {
+    height: 75%;
+    width: auto;
+}
+
     /*media queries*/
 @media (max-width: 1025px){
     .question-card-front-image{
