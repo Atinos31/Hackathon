@@ -208,7 +208,15 @@ p {
 }
     /*media queries*/
 
-@media screen and (min-width: 320px) {
+@media (max-width: 320px){
+    .question-card-front-image{
+        display: flex;
+        justify-content: center;
+        max-width: 55%;
+        height: auto;
+  }
+}
+@media (min-width: 321px) {
   html {
     font-size: calc(10px + 6 * ((100vw - 320px) / 680));
  
@@ -216,19 +224,16 @@ p {
   .jumbotron{
       min-width: 55%;
   }
-  .question-card-front-image{
-      width: auto;
-      height: 100%;
-  }
+  
   
 }
-@media screen and (min-width: 1000px) {
+@media (min-width: 1000px) {
   html {
     font-size: 15px;
   }
 }
 
-@media screen and (max-width:768px){
+@media (max-width:768px){
     .jumbotron{
         max-width: 80%;
        
