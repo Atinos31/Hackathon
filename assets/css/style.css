@@ -119,18 +119,12 @@ h1,h2,h3,h4{
  border: 0; 
 }
 
-.read-more .social-networks {
-    text-decoration: none;
-}
-
 */
-.read-more {
-    background-image: url("/media/read_more/background_read_more.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+.social-networks {
+    text-decoration: none;
+    font-family: MedievalSharp, cursive;
+    font-size: 1rem;
 }
-
 /* end_game.html */
 
 .end-game {
