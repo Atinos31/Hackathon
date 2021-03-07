@@ -95,7 +95,6 @@ h1,h2,h3,h4{
     color: #fff;
     background: #e64101;
     box-shadow: 0 0 0 5px #fff, 0 0 0 10px #e64101; 
-
 }
 
 /*end game page*/
@@ -195,9 +194,9 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.question-card:hover .question-card-inner {
+/* .question-card:active .question-card-inner {
   transform: rotateY(180deg);
-}
+} */
 
 .question-card-front, 
 .question-card-back {
@@ -215,6 +214,11 @@ p {
 .question-card-front-image {
     width:540px;
     height:670px;
+}
+
+.question-words {
+    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
 .btn-grid {
