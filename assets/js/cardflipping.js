@@ -98,8 +98,6 @@ const questionlist = [
     },
 ]
 
-
-
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
@@ -108,7 +106,6 @@ nextButton.addEventListener('click', () => {
 startGame()
 
 function startGame() {
-    $("#question-card").flip({axis: 'y', trigger: 'click'});
     shuffledQuestions = questionlist.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
@@ -128,6 +125,8 @@ function showQuestion(question) {
     button.classList.add('btn', 'question-btn')
     if (answer.correct) {
       button.dataset.correct = answer.correct
+    }else{
+        button.dataset.wrong = answer.correct
     }
     button.addEventListener('click', selectAnswer)
     answerButtonsElement.appendChild(button)
@@ -145,10 +144,21 @@ function resetState() {
 function selectAnswer(e) {
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
+  const wrong = selectedButton.dataset.wrong
+
+  if(correct){
+    rightAnswers += 1
+    document.getElementById("answers-score").innerHTML = rightAnswers;
+  }else if(wrong){
+    drinks += 1
+    document.getElementById("drinks-score").innerHTML = drinks;
+  }
+
   setStatusClass(document.body, correct)
   Array.from(answerButtonsElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
   })
+
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   } else {

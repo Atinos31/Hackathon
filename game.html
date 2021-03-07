@@ -15,118 +15,63 @@
 </head>
 
 <body>
-    <section class="landing">
-        <a href="index.html" style="text-decoration: none;">
-        <div class="col-12 header">
-            <h1><span class="logo mr-2"><img src="media/logo1.png" width="70" alt="a pic of a shamrock"
-                        class="logo"></span>ST.PATRICK'S THE GATHERING</h1>
-        </div>
-        </a>
-    </section>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
-                <!-- <button id="start-btn" class="start-btn btn">Start</button> -->
-                <p class="drinks-count d-inline p-2">Drinks</p>
-                <p class="drinks-score d-inline p-2" id="drinks-score">0</p>
-                <p class="answer-count d-inline p-2">Correct-answers</p>
-                <p class="answer-score d-inline p-2" id="answers-score">0</p>
-            </div>
+            <section class="landing">
+                <a href="index.html" style="text-decoration: none;">
+                    <div class="col-12 header">
+                        <h1><span class="logo mr-2"><img src="media/logo1.png" width="70" alt="a pic of a shamrock"
+                                    class="logo"></span>ST.PATRICK'S THE GATHERING</h1>
+                    </div>
+                </a>
+            </section>
         </div>
     </div>
 
-    <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-  <div class="carousel-inner">
-    <div class="carousel-item active"> -->
-    <div class="row">
-        <div class="col-4 d-none d-lg-block d-xl-block">
-            <div class="question-card-front side left">
-                <img class="question-card-front-image side" src="assets/images/cardback.png" alt="Card Back">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <!-- <button id="start-btn" class="start-btn btn">Start</button> -->
+                <h2 class="drinks-count d-inline p-2">Drinks:</h2>
+                <h2 class="drinks-score d-inline p-2" id="drinks-score"></h2>
+                <h2 class="answer-count d-inline p-2">Correct-answers:</h2>
+                <h2 class="answer-score d-inline p-2" id="answers-score"></h2>
             </div>
         </div>
-        <div class="col-4">
-            <div class="question-card" id="question-card">
-                <div class="question-card-inner">
-                    <div class="question-card-front">
-                        <img class="question-card-front-image" src="assets/images/cardback.png" alt="Card Back">
-                    </div>
-                    <div class="question-card-back">
-                        <h1>Question</h1>
-                        <div id="question-container">
-                            <div id="question" class="question-words">Press the Start Button for the questions to appear
-                            </div>
-                            <div id="answer-buttons" class="btn-grid"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 d-none d-lg-block d-xl-block">
+                <div class="question-card-front side left">
+                    <img class="question-card-front-image side" src="assets/images/cardback.png" alt="Card Back">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="question-card" id="question-card">
+                    <div class="question-card-inner">
+                        <div class="question-card-front">
+                            <img class="question-card-front-image" src="assets/images/cardback.png" alt="Card Back">
                         </div>
-                        <button id="next-btn" class="next-btn btn hide">Next</button>
+                        <div class="question-card-back">
+                            <h1>Question</h1>
+                            <div id="question-container">
+                                <div id="question" class="question-words">Press the Start Button for the questions to
+                                    appear
+                                </div>
+                                <div id="answer-buttons" class="btn-grid"></div>
+                            </div>
+                            <button id="next-btn" class="next-btn btn hide">Next</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-4 d-none d-lg-block d-xl-block">
-            <div class="question-card-front side right">
-                <img class="question-card-front-image side" src="assets/images/cardback.png" alt="Card Back">
-            </div>
-        </div>
-    </div>
-    <!-- </div> -->
-    <!-- <div class="carousel-item">
-        <div class="question-card">
-            <div class="question-card-inner">
-                <div class="question-card-front">
-                    <img class="question-card-front-image" src="assets/images/cardback.png" alt="Card Back">
-                </div>
-                <div class="question-card-back">
-                    <h1>Question 2</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
-                    <form>
-                        <input type="radio" id="one" name="one" value="one">
-                        <label for="one">One</label>
-                        <input type="radio" id="two" name="two" value="two">
-                        <label for="two">Two</label><br>
-                        <input type="radio" id="three" name="three" value="three">
-                        <label for="three">Three</label>
-                        <input type="radio" id="four" name="four" value="four">
-                        <label for="four">Four</label><br>
-                        <input type="submit" value="Submit">
-                    </form>
+            <div class="col-4 d-none d-lg-block d-xl-block">
+                <div class="question-card-front side right">
+                    <img class="question-card-front-image side" src="assets/images/cardback.png" alt="Card Back">
                 </div>
             </div>
         </div>
     </div>
-    <div class="carousel-item">
-        <div class="question-card">
-                <div class="question-card-inner">
-                    <div class="question-card-front">
-                        <img class="question-card-front-image" src="assets/images/cardback.png" alt="Card Back">
-                    </div>
-                    <div class="question-card-back">
-                        <h1>Question 3</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
-                        <form>
-                            <input type="radio" id="one" name="one" value="one">
-                            <label for="one">One</label>
-                            <input type="radio" id="two" name="two" value="two">
-                            <label for="two">Two</label><br>
-                            <input type="radio" id="three" name="three" value="three">
-                            <label for="three">Three</label>
-                            <input type="radio" id="four" name="four" value="four">
-                            <label for="four">Four</label><br>
-                            <input type="submit" value="Submit">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- <button class="carousel-control-prev" type="button" role="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button> -->
-    <!-- <button class="carousel-control-next" type="button" role="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button> -->
-    <!-- </div> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
@@ -134,7 +79,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js" integrity="sha512-fFCuqqfp+PTJ7OYFJVOsADHPgRz7VLaPc9uex6jEt6GbIanpRvoujyb+uwCTTk+FGBJkvvlsDLqccZABYha3IQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"
+        integrity="sha512-fFCuqqfp+PTJ7OYFJVOsADHPgRz7VLaPc9uex6jEt6GbIanpRvoujyb+uwCTTk+FGBJkvvlsDLqccZABYha3IQ=="
+        crossorigin="anonymous"></script>
     <script src="assets/js/cardflipping.js"></script>
 </body>
 
