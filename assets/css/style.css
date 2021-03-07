@@ -303,9 +303,10 @@ p {
     .question-card-back {
       margin: auto auto;
       position: relative;
-      max-width: 45%;
+      max-width: 25%;
       height: auto;
-
+      text-align: center;
+      margin-right: 150px;
   }
 }
 
