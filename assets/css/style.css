@@ -57,7 +57,7 @@ h5,
     width: 100%;
     height: 100%;
     position: fixed;
-    background-image: url('/assets/images/index-bg.jpg');
+    background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2020%2F01%2FGettyImages-1200912743-1-2000.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -105,7 +105,7 @@ h5,
 
 /*end game page*/
 .container-fluid {
-    background-image: url('/assets/images/game-bg.jpg');
+    background-image: url('https://zonecleveland.com/wp-content/uploads/2019/03/BACKGROUND2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -119,7 +119,7 @@ h5,
     width: 100%;
     height: 100%;
     position: fixed;
-    background-image: url('/assets/images/index-bg.jpg');
+    background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2020%2F01%2FGettyImages-1200912743-1-2000.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -127,14 +127,6 @@ h5,
   
 }
 
-/*--read-more
-.img-read-more {
- margin: 5px;
- padding: 3px;
- border: 0; 
-}
-
-*/
 .social-networks {
     text-decoration: none;
     font-family: MedievalSharp, cursive;
@@ -142,13 +134,6 @@ h5,
 }
 /* end_game.html */
 
-.end-game {
-    background-image: url("/media/St.-Patricks-Day1-675x477.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-  
 p {
     font-family: 'Roboto Slab', serif;
 }
