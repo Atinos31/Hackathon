@@ -7,7 +7,7 @@ let turn = 0;
 let gameOver = true; 
 let questionList
 // const card = document.getElementsByClassName('question-card');
-// const startButton = document.getElementById('start-btn')
+const ENDButton = document.getElementById('END-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
@@ -162,8 +162,10 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   } else {
-    startButton.innerText = 'Restart'
-    startButton.classList.remove('hide')
+    document.cookie = 'drinks='+drinks;
+    document.cookie = 'answers='+rightAnswers;
+    console.log(document.cookie);
+    ENDButton.classList.remove('hide')
   }
 }
 
