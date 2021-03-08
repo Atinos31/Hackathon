@@ -35,7 +35,13 @@ header {
     box-shadow: 5px 8px 8px #FF7F50;  
 }
 
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4,
+h5,
+#drinks-score,
+#answers-score {
     font-family: 'MedievalSharp', cursive;
     font-weight: 900;
     letter-spacing: 0.4rem;
@@ -133,10 +139,6 @@ h1,h2,h3,h4{
     background-size: cover;
 }
   
-
-h2, h5 {
-    font-family: 'MedievalSharp', cursive;
-}
 p {
     font-family: 'Roboto Slab', serif;
 }
@@ -172,6 +174,7 @@ p {
 
 .question-card {
   background-color: transparent;
+  border-radius: 8px;
   width: 540px;
   height: 670px;
   margin-left: auto;
@@ -210,6 +213,8 @@ p {
 
 .question-card-back {
   transform: rotateY(180deg);
+  background-color: #f5a818;
+  border-radius: 8px;
 }
 
 .question-card-front-image {
@@ -271,6 +276,11 @@ p {
     display: none;
 }
 
+.drinks-count,
+#drinks-score {
+    color: #e64101;
+}
+
     /*media queries*/
 @media (max-width: 1025px){
     .question-card-front-image{
@@ -325,7 +335,7 @@ p {
 }
 @media (max-width: 360px){
     .question-card-front-image{
-        max-width: 60%;
+        max-width: 40%;
         height: auto;
   }
   .question-card-back {
@@ -334,6 +344,9 @@ p {
       max-width: 45%;
       height: auto;
       left: 110px;
+  }
+  .question-container{
+      max-width: 360px;
   }
 }
 
