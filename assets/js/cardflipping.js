@@ -14,6 +14,7 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 
+// An array contaiining all the possible questions and answers
 const questionlist = [
     {
         question: "What is St. Patrick said to have banished from Ireland?",
@@ -97,6 +98,7 @@ const questionlist = [
     },
 ]
 
+// Event listener for the next button
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
@@ -104,12 +106,13 @@ nextButton.addEventListener('click', () => {
 
 startGame()
 
+// Flips the card
 function flipCard() {
   let qCard = document.getElementById("question-card")  
   qCard.classList.add("flipped")
 }
 
-
+// Starts the game
 function startGame() {
     flipCard()
     shuffledQuestions = questionlist.sort(() => Math.random() - .5)
@@ -118,11 +121,13 @@ function startGame() {
     setNextQuestion()
 }
 
+// Sets the next random question
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
+// Shows the randomly selected question
 function showQuestion(question) {
   questionElement.innerText = question.question
   question.answers.forEach(answer => {
@@ -139,6 +144,7 @@ function showQuestion(question) {
   })
 }
 
+// Resets button states
 function resetState() {
   clearStatusClass(document.body)
   nextButton.classList.add('hide')
@@ -147,6 +153,7 @@ function resetState() {
   }
 }
 
+// Checks if the selected answer is right
 function selectAnswer(e) {
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
@@ -175,6 +182,7 @@ function selectAnswer(e) {
   }
 }
 
+// Sets correct or wrong status to answers
 function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
@@ -184,6 +192,7 @@ function setStatusClass(element, correct) {
   }
 }
 
+// Clears correct or wrong status from answers
 function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
