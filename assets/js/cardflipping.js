@@ -1,12 +1,11 @@
 // Quiz App js
 let rightAnswers = 0;
 let answerCount = $(".answerCounter");
-let drinks = 0;
+let drinks = 0
 let drinkCount = document.getElementById("drinkCounter");
 let turn = 0;
-let gameOver = true; 
+let gameOver = true 
 let questionList
-// const card = document.getElementsByClassName('question-card');
 const ENDButton = document.getElementById('END-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
@@ -105,7 +104,14 @@ nextButton.addEventListener('click', () => {
 
 startGame()
 
+function flipCard() {
+  let qCard = document.getElementById("question-card")  
+  qCard.classList.add("flipped")
+}
+
+
 function startGame() {
+    flipCard()
     shuffledQuestions = questionlist.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
