@@ -1,15 +1,18 @@
-<div align="center">
-  <img src="static/assets/images/readme/uR-Responsive.png">
-  <img src="static/assets/images/readme/logo.png">
-<hr>
+<h1 align="left">The Magic Shamrocks!</h1>
+A HACKATHON TEAM PROJECT.
+
+![Display from differnt screen shots](assets/images/mockup.png)
+
+
+## [View the live project here.]()
+---
+This is a fictional quiz application inspired by the festive st.patricks day.it is mobile friendly ,fully responsive and accessible on a range of devices, making it easy to navigate for potential clients.
+
 
 **A video game review site with independent 100% user generated content**
 
-This app was built using [GitHub](https://pages.github.com/) and deployed to [Heroku](https://www.heroku.com/).
+This app was built using HTML, CSS, BOOTSTRAP & Javascript and deployed to [github pages](https://www.heroku.com/).
 
-[Visit uReview](https://ureview2021.herokuapp.com/)
-
-</div>
 
 ---
 
@@ -39,7 +42,7 @@ This app was built using [GitHub](https://pages.github.com/) and deployed to [He
 </details>
 
 **<details><summary> Testing</summary>**
-  - [Testing Documentation](https://github.com/NikolasKotsikos/uReview/blob/master/testing.md)
+  - [Testing Documentation]()
 </details>
 
 **<details><summary> Credits</summary>**
@@ -60,48 +63,52 @@ The scope of this app is to create a platform where gamers from all platforms, b
 
 Moreover the app caters to the administrator by providing an array of tools in order to oversee content posted by the users and to be able to update the app with more categories (genres and gaming platforms).
 
-By completing this project I felt my gained experience in HTML, CSS, and Javascript coming together, and by working with them furthered my control and mastery of Python+Flask and MongoDB. 
+By completing this project we felt we gained experience in by working together with eachother to achive one common goal, which resulted into a beautiful, fun, interactive user friendly application
 
-The project provides all tiers of users <u>CRUD</u> functionality on their and the apps data, giving them the tools to create, search, sort, view, edit and delete reviews and categories (admin users only).
 
 ### **<u>Wireframes</u>**
 
-As part of the design process, before starting my project I made initial wireframes using [Lucidchart](https://lucidchart.com). Creating these mock-ups helped me plan the basic structure and arrangement of the features for my site.
+As part of the design process, before starting the project we made initial wireframes using . Creating these mock-ups helped me plan the basic structure and arrangement of the features for my site.
 
-The final design has been influenced by mentor and user feedback so the wireframes map the journey from idea to functioning app.
+The final design has been influenced by the team and user feedback so the wireframes map the journey from idea to functioning app.
 
-- [Homepage](static/assets/images/readme/pdfs/home.pdf)
-- [Create account page](static/assets/images/readme/pdfs/create-account.pdf)
-- [Log in page](static/assets/images/readme/pdfs/log-in.pdf)
-- [Reviews page](static/assets/images/readme/pdfs/reviews-visitor.pdf)
-- [Add/Edit review page](static/assets/images/readme/pdfs/add-edit-review.pdf)
-- [Read review page visitor view](static/assets/images/readme/pdfs/read-review-visitor.pdf)
-- [Read review page user view](static/assets/images/readme/pdfs/read-review-user.pdf)
-- [Mobile view](static/assets/images/readme/pdfs/mobile.pdf)
-- [Tablet view](static/assets/images/readme/pdfs/tablet.pdf)
+
+
+![Landing page](assets/images/landingpage.png)
+
+![Game page](assets/images/gamepage.png)
+
+![End game page](assets/images/endgame.png)
+
+![Card back](assets/images/cardback.png)
+
+![Mobile & Tablette](assets/images/mobiletablette.png)
+
+![Logo](assets/images/logo.png)
+
 
 
 ### **<u>Design</u>**
-
-<img src="static/assets/images/readme/site-map.png">
 
 **Structure**
 
 - A simple design structure with a fixed navbar, a dropdown side navigation menu accessible from every page and a fixed footer. A brand logo is displayed in the top left of the screen to allow easy navigation back to the homepage.
 
-- As a mobile first site I contained the logo, login button and nav menu icon centered by two spaces creating a core towards the center of the page. This helps keep the design consistent as it moves from smaller to larger viewports.
+- As a mobile first site we contained the logo and header title are at the upper center of the page. This helps keep the design consistent as it moves from smaller to larger viewports.
 
-- As well as including a title tag on my base.html, I have also added the meta description tag to help optimize my click-through rate from search engine result pages.
+- As well as including a title tag on my base.html, we have also added the meta description tag to help optimize the click-through rate from search engine result pages.
 
 **Colour palette**
 
-- The #e0e0e0 shade of grey has been used for the main background throughout the site with all the forms using a #fafafa shade of white creating a slight contrast.
+- The #fff white has been for header font on the landing page , game page and eng page to create a contrast with green background
 
-- The #616161 shade of grey has been used as a background for the navbar as well as the colour of various UI buttons throughout the site. 
+- The #000 black had been used in body paragraph and sub headings because it is easy on the eyes and creates a perfect contrast againts its ligh bacground. 
 
-- The #fb8c00 shade of orange has been used as the colour for title text throughout the website, as well as the color of more prominent callouts and buttons.
+- The #e64101 shade of orange has been used as the colour  the start and end buttons.
+- The #ff0000  red color is used for button wrong.
+- The #7AB648 is used as the background clour for main header on all pages.
 
-- I decided on this high contrast colour scheme as the colours work well with the subject matter of the website. 
+- We decided on this high contrast colour scheme as the colours work well with the subject matter of the the theme (st.patricks). 
 
 <img src="static/assets/images/readme/palette.png">
 
