@@ -57,7 +57,7 @@ h5,
     width: 100%;
     height: 100%;
     position: fixed;
-    background-image: url('/media/index-bg.jpg');
+    background-image: url('/assets/images/index-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -104,12 +104,22 @@ h5,
 }
 
 /*end game page*/
+.container-fluid {
+    background-image: url('/assets/images/game-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
 .bg-endgame {
     background: #7AB648;
     width: 100%;
     height: 100%;
     position: fixed;
-    background-image: url('/media/index-bg.jpg');
+    background-image: url('/assets/images/index-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -252,16 +262,16 @@ p {
 
 .btn.wrong {
     background-color: #ff0000;
-    color: #ffffff;
+    color: #f1f1f1ce;
 }
 
 .btn.correct {
     background-color: #7AB648;
 }
 
-.question-card-front.side {
+/* .question-card-front.side {
     z-index: -1;
-}
+} */
 
 .question-card-front.side.left {
     text-align: right;
@@ -279,6 +289,10 @@ p {
 .drinks-count,
 #drinks-score {
     color: #e64101;
+}
+
+.counter-container {
+    background-color: #fafafa;
 }
 
     /*media queries*/
